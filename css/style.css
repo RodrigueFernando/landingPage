@@ -1,0 +1,311 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.center{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+
+.header{
+	width: 100%;
+	padding:0 2%;
+	height: 60px;
+	background-color: #212343;
+}
+
+.header img{
+  margin: 15px;
+}
+
+.container-banner{
+	width: 100%;
+	padding: 0 2%;
+	height:557px ;
+	background-image: url("../images/header_bg.png");
+	background-size: cover;
+	background-position: center;
+}
+
+
+.container-banner > .center{
+	height: 100%;
+}
+
+/*deixando for encima do header e fora do cantainer-banner
+usando calc, position e top*/
+
+
+.form{
+	padding:10px ;
+	width: 400px;
+	height: calc(100% + 30px);
+/*	display: inline-block;*/
+	float: right; 
+	position: relative;
+	top:-15px;
+	border-width: 12px;
+  border-color: rgba(120,120,120,0.5); 
+	border-style: solid;
+	background-color: white;
+	background-clip:padding-box ;
+}
+
+.form h2{
+	font-weight: normal;
+	color: #999999;
+	font-size: 21px;
+}
+
+.input-container{
+	margin-top: 20px;
+
+}
+.input-container span, form p{
+	display: innline;
+	width: 100%;
+	color: #BBBBBB;
+	font-size: 17px;
+	
+}
+.form p {
+	margin:20px 0;
+}
+
+.input-container input[type= text]{
+	margin-top: 8px;
+	width: 344px;
+	height: 55px;
+	borde :1x solid #cccc;
+}
+.form .input-submit{
+  text-align: center;
+  
+}
+.form input[type =submit]{
+	border:0;
+  color: white;
+  font-size: 25px;
+	width: 280px;
+	height: 56px;
+	display: inline-block;
+	background-color:#363A6D;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 5px solid #4A5897;
+}
+
+/*input[type=submit]:hover{
+  background-color: red;
+} este ccomado tem o mesmo feito  que o comando de baixo*/
+.form input[type=submit]:hover{
+  background-color: #323099;
+}
+.container-list{
+	padding: 30px;
+	margin-top: 100px;
+	float: left;
+	width: 519px;
+	height: 370px;
+  background-color: rgba(33,35, 67, 0.7);
+}
+
+.container-list ul{
+	list-style-position: inside;/* deixa lista dentro container-list por padrão ele fica fora*/
+}
+.container-list ul li{
+ font-weight:normal;
+	margin-top: 18px;
+	color: white;
+}
+
+.container-2 {
+ 	padding: 40px 2%;
+ 	background-color: rgba(200,200,200,0.5);
+/* background-color: #ddd;*/
+}
+.container-2 h2{
+	font-weight: normal;
+	text-align: center;
+}
+
+.container-2 p{
+	width: 100%;
+ max-width:768px ;
+	margin: 15px 0;
+	display: inline-block;
+	text-align: justify;
+}
+
+.arrow{
+	position: relative;
+	top: 60px;
+	width: 40px;
+	left: 50%;/* centralizando no meio*/
+  margin-left: -20px;/* centralizando no meio*/
+/*	display: inline-block;
+	text-align: left;   podemos centralizer  assim tbm*/
+	height: 40px;
+	background-image: url("../images/arrow.png");
+	background-size: 100% 100%;  /* para aarrumar a imagem dentro da div*/
+
+
+}
+
+.section-1{
+	padding: 90px 2%;
+
+}
+
+.section-1 h2{
+	text-align: center;
+	color: #462663;
+	font-weight: normal;
+}
+
+.container-section{
+	margin-top:40px ;
+	text-align: center;
+
+}
+
+.container-single{
+	float: left;
+	width: 33.33%;
+	padding: 30px;
+}
+
+.container-single p{
+	text-align: justify;
+	padding: 10px 25px;
+}
+.container-single img{
+	width: 70px;
+}
+
+.footer{
+ /*	clear: both;  poderia ser aki*/
+  border-top:2px solid #888888;
+  padding: 8px 0;
+  text-align: center;
+	color: #888;
+
+}
+.footer p{
+	margin-top: 8px;
+}
+
+
+
+
+
+
+
+/*RESPONSIVO*/
+@media screen and (max-width: 1024px){
+	.header{
+		height: auto;
+		width: 100%;
+		padding:15px 0;
+		text-align: center;
+
+	}
+
+	.header img{
+		margin: 0;
+	}
+
+	.container-list{
+		padding: 30px 0; 
+		width: 40%;
+		float: left;
+		display: inline-block;
+		max-width: 500px;
+		height: auto;
+	 
+	}
+
+
+
+	.container-banner{
+		width: 100%;
+		padding: 40 2%;
+		height:auto ;
+		text-align: center;
+		
+  }
+
+  .form{
+  	max-width: 400px;
+		padding:10px ;
+		width: 60%;
+		height: 100%;
+	  float: right;
+		top:0;
+		
+	}
+  .input-container input[type= text]{
+		width: 100%;
+		height: 55px;
+		
+	}
+
+	
+
+	.form input[type =submit]{
+	  max-width: 280px;
+		height: 56px;
+		width: 100%;
+	
+	}
+
+ 
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.container-2{
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+  .container-list{
+    margin-top: 0;
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .form{
+  	float: none;
+  	display: inline-block;
+  	width: 70%;
+  	margin-top: 30px;
+  }
+
+  .container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600PX;
+		padding: 30px 0;
+  }
+
+}
